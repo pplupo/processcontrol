@@ -1,0 +1,15 @@
+Package: processcontrol
+Type: Package
+Title: Statistical Process Control Charts
+Version: 0.1.0
+Authors@R: person(given = "Peter", family = "P. Lupo", role = c("aut", "cre"), email = "pplupo@gmail.com")
+Description: Generate time series chart for individual values with mean and +/-
+    3 standard deviation lines and the corresponding mR chart with the upper control
+    limit. Also execute the 8 Shewhart stability run tests and display the violations.
+Depends:
+    R (>= 3.1.0)
+License: MIT + file LICENSE
+LazyData: TRUE
+Imports:
+    plyr
+RoxygenNote: 5.0.1
