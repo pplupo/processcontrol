@@ -8,10 +8,9 @@ Authors@R: person(given = "Peter", family = "P. Lupo", role = c("aut", "cre"), e
 Description: Generate time series chart for individual values with mean and +/-
     3 standard deviation lines and the corresponding mR chart with the upper control
     limit. Also execute the 8 Shewhart stability run tests and display the violations.
-Depends:
-    R (>= 4.5.0)
+Depends: R (>= 4.5.0)
 License: MIT + file LICENSE
 LazyData: TRUE
-Imports:
-    plyr
+Imports: plyr
 RoxygenNote: 5.0.1
+Built: R 4.5.0; ; 2025-06-06 15:54:08 UTC; unix

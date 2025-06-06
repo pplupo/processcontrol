@@ -32,7 +32,8 @@ six_sigma_ctrl_chart <- function(x,
                                  applyRules = c(TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE),
                                  rulesColors = c("red", "yellow2", "green", "magenta", "blue", "orange", "brown", "cyan"),
                                  seg = c(), keepStats=TRUE, verbose=FALSE) {
-  x = x[order(x[2]),]
+  # Ensure ordering is by the vector content of the second column, not the list/df column itself
+  x = x[order(x[,2]),]
   x[,2] <- as.factor(x[,2])
 
   if (length(seg) == 0) {
@@ -75,8 +76,8 @@ six_sigma_ctrl_chart <- function(x,
 
   graphics::par(mfrow=c(2,1))
 
-  graphics::plot(x[,1], xlim=c(x[,2][1],x[,2][length(x[,2])]), ylab="IndX", xlab="", cex.lab=0.8, yaxt="n", xaxt="n", ylim=c(min(zonesBoundaries), max(zonesBoundaries)), type="n", pch=16, cex=0.7)
-  graphics::axis(x[,2],side=1, las=2, at=x[,2], cex.axis=0.8)
+  graphics::plot(x[,1], xlim=c(as.numeric(x[,2][1]),as.numeric(x[,2][length(x[,2])])), ylab="IndX", xlab="", cex.lab=0.8, yaxt="n", xaxt="n", ylim=c(min(zonesBoundaries), max(zonesBoundaries)), type="n", pch=16, cex=0.7)
+  graphics::axis(as.numeric(x[,2]),side=1, las=2, at=as.numeric(x[,2]), cex.axis=0.8)
   graphics::axis(side=2, cex.axis=0.8)
 
   for (i in 1:7) {
@@ -111,7 +112,8 @@ six_sigma_ctrl_chart <- function(x,
 
   graphics::plot(ylab="mR", xlab="", mR, yaxt="n", ylim=c(-1, max(ucl, max(mR)+1)), xaxt="n", type="n", cex.lab = 0.8)
   graphics::axis(side=2, cex.axis=0.8)
-  graphics::axis(side=1, las=2, at=c(1:length(mR)), cex.axis=0.8)
+  # Using numeric sequence for x-axis of mR chart
+  graphics::axis(side=1, las=2, at=1:length(mR), labels=x[-1,2], cex.axis=0.8)
 
   graphics::abline(a=ucl,b=0, col=linesColors[1])
   graphics::mtext(at=ucl,text=paste(" ",round(ucl,digits=2)), side=4, cex = 0.8, las=1)

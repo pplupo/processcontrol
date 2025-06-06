@@ -1,0 +1,96 @@
+
+R version 4.5.0 (2025-04-11) -- "How About a Twenty-Six"
+Copyright (C) 2025 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> pkgname <- "processcontrol"
+> source(file.path(R.home("share"), "R", "examples-header.R"))
+> options(warn = 1)
+> library('processcontrol')
+>
+> base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
+> base::assign(".old_wd", base::getwd(), pos = 'CheckExEnv')
+> cleanEx()
+> nameEx("six_sigma_ctrl_chart")
+> ### * six_sigma_ctrl_chart
+>
+> flush(stderr()); flush(stdout())
+>
+> ### Name: six_sigma_ctrl_chart
+> ### Title: Generate IndX and mR charts.
+> ### Aliases: six_sigma_ctrl_chart
+>
+> ### ** Examples
+>
+> data("spcTimeSeries")
+> six_sigma_ctrl_chart(spcTimeSeries)
+> six_sigma_ctrl_chart(spcTimeSeries, verbose=TRUE)
+[1] "IndX Mean =  16.24"
+[1] "IndX Std. dev.  =  6.93857610636638"
+[1] "IndX Violations =  8"
+[1] "mR Mean =  7.61616161616162"
+[1] "mR UCL  =  24.882"
+[1] "mR Violations =  1"
+> six_sigma_ctrl_chart(spcTimeSeries, seg=c(25, 50, 75))
+dev.new(): using pdf(file="Rplots1.pdf")
+dev.new(): using pdf(file="Rplots2.pdf")
+dev.new(): using pdf(file="Rplots3.pdf")
+> six_sigma_ctrl_chart(spcTimeSeries, seg=c(25, 50, 75), keepStats=FALSE, verbose=TRUE)
+dev.new(): using pdf(file="Rplots4.pdf")
+[1] "IndX Mean =  15.84"
+[1] "IndX Std. dev.  =  7.63042156983042"
+[1] "IndX Violations =  2"
+[1] "mR Mean =  7.08333333333333"
+[1] "mR UCL  =  23.14125"
+[1] "mR Violations =  1"
+dev.new(): using pdf(file="Rplots5.pdf")
+[1] "IndX Mean =  19.48"
+[1] "IndX Std. dev.  =  5.67244803120017"
+[1] "IndX Violations =  1"
+[1] "mR Mean =  7.04166666666667"
+[1] "mR UCL  =  23.005125"
+[1] "mR Violations =  0"
+dev.new(): using pdf(file="Rplots6.pdf")
+[1] "IndX Mean =  16.96"
+[1] "IndX Std. dev.  =  6.96706537934014"
+[1] "IndX Violations =  1"
+[1] "mR Mean =  8.5"
+[1] "mR UCL  =  27.7695"
+[1] "mR Violations =  0"
+dev.new(): using pdf(file="Rplots7.pdf")
+[1] "IndX Mean =  12.68"
+[1] "IndX Std. dev.  =  5.9"
+[1] "IndX Violations =  0"
+[1] "mR Mean =  8.04166666666667"
+[1] "mR UCL  =  26.272125"
+[1] "mR Violations =  0"
+>
+>
+>
+> ### * <FOOTER>
+> ###
+> cleanEx()
+> options(digits = 7L)
+> base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
+Time elapsed:  0.644 0.108 0.754 0 0
+> grDevices::dev.off()
+pdf
+  2
+> ###
+> ### Local variables: ***
+> ### mode: outline-minor ***
+> ### outline-regexp: "\\(> \\)?### [*]+" ***
+> ### End: ***
+> quit('no')

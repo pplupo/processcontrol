@@ -1,0 +1,248 @@
+* using log directory ‘/app/..Rcheck’
+* using R version 4.5.0 (2025-04-11)
+* using platform: x86_64-pc-linux-gnu
+* R was compiled by
+    gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+    GNU Fortran (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+* running under: Ubuntu 24.04.2 LTS
+* using session charset: UTF-8
+* checking for file ‘./DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘processcontrol’ version ‘0.1.0’
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... NOTE
+Found the following apparent object files/libraries:
+  packrat/lib-R/KernSmooth/libs/KernSmooth.so
+  packrat/lib-R/MASS/libs/MASS.so packrat/lib-R/Matrix/libs/Matrix.so
+  packrat/lib-R/class/libs/class.so
+  packrat/lib-R/cluster/libs/cluster.so
+  packrat/lib-R/foreign/libs/foreign.so
+  packrat/lib-R/grDevices/libs/cairo.so
+  packrat/lib-R/grDevices/libs/grDevices.so
+  packrat/lib-R/graphics/libs/graphics.so
+  packrat/lib-R/grid/libs/grid.so packrat/lib-R/lattice/libs/lattice.so
+  packrat/lib-R/methods/libs/methods.so packrat/lib-R/mgcv/libs/mgcv.so
+  packrat/lib-R/nlme/libs/nlme.so packrat/lib-R/nnet/libs/nnet.so
+  packrat/lib-R/parallel/libs/parallel.so
+  packrat/lib-R/rpart/libs/rpart.so
+  packrat/lib-R/spatial/libs/spatial.so
+  packrat/lib-R/splines/libs/splines.so
+  packrat/lib-R/stats/libs/stats.so
+  packrat/lib-R/survival/libs/survival.so
+  packrat/lib-R/tcltk/libs/tcltk.so packrat/lib-R/tools/libs/tools.so
+  packrat/lib-R/utils/libs/utils.so
+  packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/libs/Rcpp.so
+  packrat/lib/x86_64-pc-linux-gnu/4.5.0/plyr/libs/plyr.so
+Object files/libraries should not be included in a source package.
+
+Subdirectory ‘packrat/lib-R/KernSmooth’ seems to contain an installed version of the package.
+* checking if there is a namespace ... OK
+* checking for executable files ... WARNING
+Found the following executable file:
+  packrat/lib-R/methods/help/methods.rdb
+Source packages should not contain undeclared executable files.
+See section ‘Package structure’ in the ‘Writing R Extensions’ manual.
+* checking for hidden files and directories ... NOTE
+Found the following hidden files and directories:
+  .Rhistory
+  .Rprofile
+  .gitignore
+  ..Rcheck
+  .git
+These were most likely included in error. See section ‘Package
+structure’ in the ‘Writing R Extensions’ manual.
+* checking for portable file names ... NOTE
+Found the following non-portable file paths:
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/examples/ConvolveBenchmarks/convolve10_cpp.cpp
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/examples/ConvolveBenchmarks/convolve10_cpp.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/examples/ConvolveBenchmarks/convolve11_cpp.cpp
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/examples/ConvolveBenchmarks/convolve12_cpp.cpp
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/examples/ConvolveBenchmarks/convolve13_cpp.cpp
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/examples/ConvolveBenchmarks/convolve14_cpp.cpp
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/examples/ConvolveBenchmarks/convolve3_cpp.cpp
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/examples/ConvolveBenchmarks/convolve4_cpp.cpp
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/examples/ConvolveBenchmarks/convolve5_cpp.cpp
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/examples/ConvolveBenchmarks/convolve8_cpp.cpp
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/examples/ConvolveBenchmarks/convolve9_cpp.cpp
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/examples/RcppInline/RcppInlineWithLibsExamples.r
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/examples/SugarPerformance/sugarBenchmarks.R
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/InternalFunctionWithStdFunction.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/date_datetime/newDatetimeVector.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/date_datetime/oldDatetimeVector.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/generated/DataFrame_generated.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/generated/Function__operator.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/generated/InternalFunctionWithStdFunction_call.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/generated/InternalFunction__ctors.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/module/Module_generated_Constructor.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/module/Module_generated_CppFunction.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/module/Module_generated_CppMethod.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/module/Module_generated_Factory.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/module/Module_generated_Pointer_CppMethod.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/module/Module_generated_Pointer_method.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/module/Module_generated_class_constructor.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/module/Module_generated_class_factory.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/module/Module_generated_class_signature.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/module/Module_generated_ctor_signature.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/module/Module_generated_function.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/module/Module_generated_get_signature.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/module/Module_generated_method.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/sugar/functions/mapply/mapply_2.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/sugar/functions/mapply/mapply_3.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/sugar/functions/strings/collapse.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/sugar/functions/strings/strings.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/sugar/functions/strings/trimws.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/sugar/logical/SingleLogicalResult.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/sugar/matrix/matrix_functions.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/sugar/operators/Comparator_With_One_Value.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/sugar/operators/logical_operators__Vector__Vector.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/sugar/operators/logical_operators__Vector__primitive.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/include/Rcpp/traits/remove_const_and_reference.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/bin/amd64/r-cran-testrcpppackage_0.1.0-1_amd64.deb
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/bin/i386/r-cran-testrcpppackage_0.1.0-1_i386.deb
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/src/r-cran-testrcpppackage_0.1.0-1.diff.gz
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/src/r-cran-testrcpppackage_0.1.0-1.dsc
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/src/r-cran-testrcpppackage_0.1.0-1_amd64.changes
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/src/r-cran-testrcpppackage_0.1.0-1_amd64.deb
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/src/r-cran-testrcpppackage_0.1.0-1_i386.changes
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/src/r-cran-testrcpppackage_0.1.0-1_i386.deb
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppAttributePackage/DESCRIPTION
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppAttributePackage/NAMESPACE
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppAttributePackage/src/rcpp_test.cpp
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppClass/R/rcpp_hello_world.R
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppClass/man/Rcpp_class_examples.Rd
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppClass/man/rcpp_hello_world.Rd
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppClass/man/testRcppClass-package.Rd
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppClass/src/rcpp_hello_world.cpp
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppClass/src/rcpp_hello_world.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppInterfaceExporter/DESCRIPTION
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppInterfaceExporter/NAMESPACE
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppInterfaceExporter/R/RcppExports.R
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppInterfaceExporter/R/exporter.R
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppInterfaceExporter/inst/include/testRcppInterfaceExporter.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppInterfaceExporter/inst/include/testRcppInterfaceExporter_RcppExports.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppInterfaceExporter/src/RcppExports.cpp
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppInterfaceExporter/src/exporter.cpp
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppInterfaceExporter/src/unwound.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppInterfaceUser/src/config.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppInterfaceUser/src/unwound.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppInterfaceUser/src/user.cpp
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppInterfaceUser/tests/tests.R
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppModule/R/rcpp_hello_world.R
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppModule/man/Rcpp_modules_examples.Rd
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppModule/man/rcpp_hello_world.Rd
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppModule/man/testRcppModule-package.Rd
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppModule/src/rcpp_hello_world.cpp
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppModule/src/rcpp_hello_world.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppModule/src/rcpp_module.cpp
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppPackage/R/rcpp_hello_world.R
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppPackage/man/testRcppPackage-package.Rd
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppPackage/src/rcpp_hello_world.cpp
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppPackage/src/rcpp_hello_world.h
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/Ugly, but legal, path for a project (long)/bread/DESCRIPTION
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/Ugly, but legal, path for a project (long)/breakfast/DESCRIPTION
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/Ugly, but legal, path for a project (long)/oatmeal/DESCRIPTION
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/Ugly, but legal, path for a project (long)/packrat/DESCRIPTION
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/Ugly, but legal, path for a project (long)/toast/DESCRIPTION
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/lockfiles/lockfile-multipleRepos.txt
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/other-packages/packrat/DESCRIPTION
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/packages/bread/DESCRIPTION
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/packages/breakfast/DESCRIPTION
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/packages/oatmeal/DESCRIPTION
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/packages/packrat/DESCRIPTION
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/packages/toast/DESCRIPTION
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/projects/emptydesc/DESCRIPTION
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/projects/healthy/healthy.R
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/projects/libraries/library.R
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/projects/libraries/packrat/lib/lib-current.R
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/projects/libraries/packrat/library.new/lib-new.R
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/projects/smallbreakfast/bread.R
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/projects/smallbreakfast/oatmeal.R
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/repo-empty/src/contrib/PACKAGES
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/repo/src/contrib/PACKAGES
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/repo/src/contrib/PACKAGES.gz
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/repo/src/contrib/bread/bread_1.0.0.tar.gz
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/repo/src/contrib/breakfast/breakfast_1.0.0.tar.gz
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/repo/src/contrib/oatmeal/oatmeal_1.0.0.tar.gz
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/repo/src/contrib/packrat/packrat_0.0.0.tar.gz
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/repo/src/contrib/toast/toast_1.0.0.tar.gz
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/resources/interactive-doc-example.Rmd
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/resources/knitr-minimal.Rnw
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/resources/params-example.Rmd
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/resources/test-sweave.Rnw
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/test-local-repositories.R
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/tinytest/testRcppInterfaceExporter/inst/include
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/Ugly, but legal, path for a project (long)/bread
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/Ugly, but legal, path for a project (long)/breakfast
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/Ugly, but legal, path for a project (long)/oatmeal
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/Ugly, but legal, path for a project (long)/packrat
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/Ugly, but legal, path for a project (long)/toast
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/projects/libraries/packrat/lib
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/projects/libraries/packrat/library.new
+  processcontrol/packrat/lib/x86_64-pc-linux-gnu/4.5.0/packrat/tests/testthat/repo/src/contrib/breakfast
+
+Tarballs are only required to store paths of up to 100 bytes and cannot
+store those of more than 256 bytes, with restrictions including to 100
+bytes for the final component.
+See section ‘Package structure’ in the ‘Writing R Extensions’ manual.
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘processcontrol’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... NOTE
+Checking should be performed on sources prepared by ‘R CMD build’.
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... WARNING
+Found the following directory with the name of a check directory:
+  ./..Rcheck
+Most likely, these were included erroneously.
+Found the following CITATION files in a non-standard place:
+  packrat/lib-R/MASS/CITATION
+  packrat/lib-R/base/CITATION
+  packrat/lib-R/boot/CITATION
+  packrat/lib-R/class/CITATION
+  packrat/lib-R/cluster/CITATION
+  packrat/lib-R/lattice/CITATION
+  packrat/lib-R/mgcv/CITATION
+  packrat/lib-R/nlme/CITATION
+  packrat/lib-R/nnet/CITATION
+  packrat/lib-R/spatial/CITATION
+  packrat/lib-R/survival/CITATION
+  packrat/lib/x86_64-pc-linux-gnu/4.5.0/Rcpp/CITATION
+  packrat/lib/x86_64-pc-linux-gnu/4.5.0/plyr/CITATION
+Most likely ‘inst/CITATION’ should be used instead.
+* checking code files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... NOTE
+checkRd: (-1) spcTimeSeries.Rd:20-35: Lost braces
+    20 | code{values = cbind(values=c(17,\cr
+       |     ^
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking LazyData ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking include directives in Makefiles ... OK
+* checking examples ... OK
+* checking PDF version of manual ... OK
+* DONE
+Status: 2 WARNINGs, 5 NOTEs
