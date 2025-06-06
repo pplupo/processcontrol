@@ -1,0 +1,3 @@
+six_sigma_ctrl_chart    Generate IndX and mR charts.
+spcTimeSeries           Time series with one of each violation to be
+                        used as test and example sample.
