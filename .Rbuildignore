@@ -2,3 +2,5 @@
 ^\.Rprofile$
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^packrat/lib.*/
+^packrat/lib-R/
