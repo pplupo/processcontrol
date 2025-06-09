@@ -1,0 +1,73 @@
+name: R CMD Check & Build
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  R-CMD-check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read # Needed to read .ver and commit SHA
+      # contents: write # Only if we were to commit the DESCRIPTION file change back
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Required to get commit SHA
+
+      - name: Set up R
+        uses: r-lib/actions/setup-R@v2
+        with:
+          r-version: '4.5.0'
+
+      - name: Read version from .ver file
+        id: get_version
+        run: echo "VERSION=$(cat .ver)" >> $GITHUB_OUTPUT
+
+      - name: Get short commit SHA
+        id: get_sha
+        run: echo "SHA=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+
+      - name: Construct dynamic version string
+        id: dynamic_version
+        run: echo "FULL_VERSION=${{ steps.get_version.outputs.VERSION }}.${{ steps.get_sha.outputs.SHA }}" >> $GITHUB_OUTPUT
+
+      - name: Update DESCRIPTION file with dynamic version
+        run: |
+          echo "Using version for DESCRIPTION: ${{ steps.dynamic_version.outputs.FULL_VERSION }}"
+          sed -i "s/^Version: .*/Version: ${{ steps.dynamic_version.outputs.FULL_VERSION }}/" DESCRIPTION
+          echo "DESCRIPTION file after update:"
+          cat DESCRIPTION
+
+      - name: Install dependencies
+        uses: r-lib/actions/setup-R-dependencies@v2
+        with:
+          packages: |
+            any::packrat
+            any::rcpp
+            any::plyr
+          needs: check
+
+      - name: Check package
+        uses: r-lib/actions/check-R-package@v2
+        with:
+          upload-snapshots: true # Useful for debugging check failures
+
+      - name: Build package
+        id: build
+        run: |
+          R CMD build .
+          # Find the built package name
+          PKG_FILE=$(ls *.tar.gz)
+          echo "PKG_FILE=$PKG_FILE" >> $GITHUB_OUTPUT
+          echo "Built package file: $PKG_FILE"
+
+      - name: Upload package tarball
+        uses: actions/upload-artifact@v4
+        with:
+          name: processcontrol-${{ steps.dynamic_version.outputs.FULL_VERSION }}
+          path: ${{ steps.build.outputs.PKG_FILE }}
