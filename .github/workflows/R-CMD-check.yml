@@ -46,9 +46,9 @@ jobs:
         uses: r-lib/actions/setup-r-dependencies@v2 # Corrected path
         with:
           packages: |
-            any::packrat
-            any::rcpp
-            any::plyr
+            packrat
+            rcpp
+            plyr
           needs: check
 
       - name: Check package
