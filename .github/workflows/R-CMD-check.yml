@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0
 
       - name: Set up R
-        uses: r-lib/actions/setup-r@v2  # Corrected path
+        uses: r-lib/actions/setup-r@v2
         with:
           r-version: '4.5.0'
 
@@ -42,17 +42,18 @@ jobs:
           echo "DESCRIPTION file after update:"
           cat DESCRIPTION
 
-      - name: Install dependencies
-        uses: r-lib/actions/setup-r-dependencies@v2 # Corrected path
+      - name: Install system dependencies and packrat
+        uses: r-lib/actions/setup-r-dependencies@v2
         with:
           packages: |
             packrat
-            rcpp
-            plyr
-          needs: check
+          # Removed rcpp and plyr as packrat::restore() should handle them via packrat.lock
+
+      - name: Restore R package dependencies (packrat)
+        run: Rscript -e "packrat::restore()"
 
       - name: Check package
-        uses: r-lib/actions/check-r-package@v2 # Corrected path
+        uses: r-lib/actions/check-r-package@v2
         with:
           upload-snapshots: true
 
