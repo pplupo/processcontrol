@@ -47,8 +47,10 @@ jobs:
         with:
           packages: |
             packrat
-            rcmdcheck # Added rcmdcheck for the check-r-package action
-          # Removed rcpp and plyr as packrat::restore() should handle them via packrat.lock
+            rcmdcheck
+            # The rcmdcheck package is needed for the check-r-package action.
+            # Other R package dependencies like rcpp and plyr are restored
+            # from packrat.lock in a subsequent step.
 
       - name: Restore R package dependencies (packrat)
         run: Rscript -e "packrat::restore()"
