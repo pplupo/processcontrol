@@ -47,7 +47,9 @@ jobs:
         with:
           packages: |
             packrat
-            rcmdcheck
+
+      - name: Install rcmdcheck
+        run: Rscript -e "install.packages('rcmdcheck', repos = 'https://cloud.r-project.org')"
 
       - name: Restore R package dependencies (packrat)
         run: Rscript -e "packrat::restore()"
