@@ -9,7 +9,7 @@ Description: Generate time series chart for individual values with mean and +/-
     3 standard deviation lines and the corresponding mR chart with the upper control
     limit. Also execute the 8 Shewhart stability run tests and display the violations.
 Depends:
-    R (>= 4.5.0)
+    R (>= 4.0.0)
 License: MIT + file LICENSE
 LazyData: TRUE
 Imports:
